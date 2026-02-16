@@ -1,17 +1,114 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LordBless</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="lahatra.css" />
+    <link rel="stylesheet" href="lahatra.css"/>
+  </head>
   <body>
-    <section class="hero"></section>
-
-    <section class="david-section"></section> 
-    <section class="jonah-section">
-      <div class="personal-information"></div>
+    <section class="hero" id="heroSect">
+      <div class="bcg-img">
+        <img id="polygon" src="./assets/design_photos/polygon.png" alt="" />
+        <img
+          id="rectangle_design"
+          src="./assets/design_photos/rectangle_design.png"
+          alt=""
+        />
+        <img
+          id="rectangle_rounded"
+          src="./assets/design_photos/rectangle_rounded.png"
+          alt=""
+        />
+        <img id="circle" src="./assets/design_photos/circle.png" alt="" />
+      </div>
+      <section class="hero-content">
+        <h1>
+          We <span class="invert">ar</span>e
+          <span class="invert">Lord</span>Bless
+        </h1>
+        <p>Let's meet the web concepts</p>
+        <a href="#aboutLordBless" class="hero-btn to-abouts">
+          <span class="btn-text"> Explore the LordBless </span>
+        </a>
+      </section>
     </section>
+
+    <div class="nav-bar">
+      <div class="logo">
+        <a href="#"><span class="invert">Lord</span>Bless</a>
+      </div>
+
+      <ul class="nav-links">
+        <a href="#team" class="link">Team</a>
+        <a href="#member" class="link">Member</a>
+        <a href="#working" class="link">Working</a>
+      </ul>
+    </div>
+
+    <seciton id="team" class="team-about-box">
+      <div class="team-summary">
+        <div class="team-propos">
+          <h1>LordBless, our group's name!</h1>
+          <p class="about-team">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quia
+            quasi excepturi! A magnam deleniti repellendus delectus. Nemo quia
+            mollitia perferendis perspiciatis blanditiis. Asperiores tempore
+            minima rerum hic culpa voluptate!
+          </p>
+        </div>
+
+        <div class="grp-photo-box">
+          <img src="./assets/grp_photos/grp_photos_test.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="bg-outro">
+        <img
+          id="rectangle_design"
+          src="assets/design_photos/rectangle_design.png"
+          alt=""
+        />
+        <img
+          id="rectangle_rounded"
+          src="assets/design_photos/rectangle_rounded.png"
+          alt=""
+        />
+      </div>
+    </seciton>
+
+    <main class="member-section" id="member">
+      <section class="member lahatra-section">
+        <div class="laatr-information">
+          <div class="laatr-info-box">
+            <h1>Lahatra RAJAONARISON</h1>
+            <div class="laatr-description">
+              <p>
+                Hello, My name is
+                <strong>RAJAONARISON Andrianamaro Lahatra</strong>
+              </p>
+              <p>
+                I have 16 years old. Originate at Antananarivo, now I'm leaving
+                at Soanierana Fianarantsoa .I'm passionate learning web
+                development. I wanna be a Designer UI and UX.
+              </p>
+            </div>
+          </div>
+          <a
+            href="./grp_cv/Lahatra/index.html"
+            target="_blank"
+            class="btn-laatr"
+            ><span>Discover my CV</span></a
+          >
+        </div>
+
+        <div class="perso-img">
+          <img src="assets/grp_photos/Lahatra_photo.jpg" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
