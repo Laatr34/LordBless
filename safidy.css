@@ -1,4 +1,4 @@
-.jonah-section {
+.safidy-section {
   background: rgb(26, 26, 85);
 
   * {
@@ -121,10 +121,14 @@
   }
 }
 
-.jonah-section.home {
+.safidy-section.home {
   display: flex;
   align-items: center;
   height: 100vh;
   padding: 60px 9% 0;
   color: #fff;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  /* animation: show-content 2s linear forwards;
+  animation-delay: 1.6s; */
 }
