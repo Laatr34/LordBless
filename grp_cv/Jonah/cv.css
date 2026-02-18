@@ -26,7 +26,7 @@
 }
 .left-section{
     background: var(--black);
-    width: 388px;
+    width: 442px;
     height: 1000px;
     /* float: left; */
 }
@@ -272,10 +272,8 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-
-
-
-
-
-
+.loisirs-div {
+    display: flex;
+    gap: 1rem;
+}
 
