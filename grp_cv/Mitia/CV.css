@@ -1,0 +1,85 @@
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    display: flex;
+}
+
+img{
+    width: 170px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+}
+
+.contact__section{
+    margin-left: 2rem;
+    font-size: large;
+}
+
+.ss{
+    background: #A8CABA;
+    padding-right: 1rem;
+    margin-right: 2rem;
+    height: 100vh;
+    width: 28%;
+}
+
+.contact__section .phone__contact{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+ .contact__section .mail{
+    font-size: medium;
+    
+ }
+
+.contact__section .q{
+    margin-bottom: 1rem;
+}
+
+.contact__section .l{
+    margin-bottom: 1rem;
+}
+
+.contact__section .loisirs{
+    margin-bottom: 1rem;
+}
+
+.home__section{
+    margin-top: 1rem;
+}
+
+.home__name{
+    font-size: 55px;
+}
+
+.home__description{
+    font-size: large;
+}
+
+.info{
+    margin-top: 1rem;
+}
+
+.section__title{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.quality{
+    margin-top: 3rem;
+}
+
+.compétence{
+    margin-top: 1rem;
+}
