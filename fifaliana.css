@@ -1,0 +1,84 @@
+.fifaliana-section {
+  padding: 145px;
+  background: linear-gradient(to left, black, gray);
+  width: 100%;
+
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  h1 {
+    animation: move 2s infinite;
+  }
+
+  body::backdrop {
+    filter: blur(8px);
+  }
+
+  div {
+    color: aquamarine;
+    padding: 30px;
+  }
+
+  .cercle {
+    width: 350px;
+    height: 360px;
+    background-image: url(./assets/grp_photos/fifaliana.jpg);
+    border-radius: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    box-shadow: 5px 10px 10px rgb(37, 36, 36);
+  }
+
+  .cercle::before {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.5)),
+      rgba(0, 0, 0, 0.5),
+      url(./assets/grp_photos/fifaliana.jpg) no-repeat center center/cover;
+    filter: blur(6px);
+  }
+
+  h2 {
+    color: antiquewhite;
+  }
+
+  p {
+    color: azure;
+  }
+
+  #cercle1 {
+    top: 100px;
+    right: 140px;
+  }
+
+  button {
+    background-position: center;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 60px;
+    background: linear-gradient(rgb(34, 34, 34), gray);
+    color: rgb(46, 37, 37);
+    font-weight: 900;
+    cursor: cell;
+  }
+
+  i {
+    font-size: 20px;
+    color: rgb(92, 86, 143);
+    margin-right: 40px;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+}
