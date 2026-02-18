@@ -358,11 +358,11 @@
 }
 
 .member-section .slider-btn-box .slider-btn {
-  background-color: #ffe135;
+  background-color: transparent;
   border: none;
   border-radius: 0.2rem;
   font-size: 5rem;
-  color: var(--color-deep-black);
+  color: #ffe135;
   cursor: pointer;
   position: relative;
   z-index: 3;
