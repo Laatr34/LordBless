@@ -250,6 +250,7 @@
   bottom: 4px;
 }
 
+
 .team-about-box {
   position: relative;
   height: 100vh;
@@ -257,7 +258,7 @@
   background: linear-gradient(to bottom, #8f8f8f4f 20%, transparent);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   padding: 2rem;
 }
 
@@ -270,22 +271,55 @@
   z-index: 1;
 }
 
-.team-about-box .team-summary .team-propos {
-  width: 500px;
+.team-about-box .grp-photo-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 0;
+  z-index: 0;
+
+  img {
+    border-radius: 0.5rem;
+    width: 90px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px #00000080;
+    object-position: center;
+  }
+
+  img:nth-child(even) {
+    transform: translateY(-1.5rem);
+  }
+
+  img:nth-child(even) {
+    transform: translateY(1.5rem);
+  }
 }
 
-.team-about-box .team-summary .team-propos h1 {
-  margin-bottom: 1.8rem;
-  font-family: var(--ff-playfair-display);
-  color: var(--color-deep-black);
-  font-size: 46px;
-  line-height: 1;
+.team-about-box::before {
+  content: "";
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #25232480, transparent);
+}
+
+.team-about-box .team-summary .team-propos {
+  width: 850px;
 }
 
 .team-about-box .team-summary .team-propos .about-team {
   font-size: 22px;
   font-weight: 200;
   font-family: var(--ff-poppins);
+  text-align: center;
 }
 
 .team-about-box .bg-outro {
