@@ -130,7 +130,10 @@ body {
 
         img {
           width: 200px;
+          object-position: 0px -50px;
+          object-fit: cover;
           border-radius: 2rem;
+          height: 200px;
         }
 
         .profil-info {
