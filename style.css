@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
+
 :root {
   --color-primary-light: #fff;
   --color-primary-dark: #383838;
@@ -7,6 +9,41 @@
   --ff-playfair-display: "Playfair Display", arial;
   --ff-poppins: "Poppins", sans-serif;
   --color-green-topic: #bef8cf;
+
+  --header-height: 3.5rem;
+
+  /* color  */
+  --hue: 255;
+  --first-color: hsl(var(--hue), 60%, 64%);
+  --first-color-alt: hsl(var(--hue), 80%, 56%);
+  --first-color-alt2: hsl(var(--hue), 60%, 56%);
+  --first-color-light: hsl(var(--hue), 60%, 74%);
+  --title-color: hsl(240, 8%, 95%);
+  --text-color: hsl(240, 8%, 70%);
+  --text-color-light: hsl(240, 8%, 50%);
+  --body-color: hsl(240, 100%, 2%);
+  --container-color: hsl(240, 8%, 6%);
+
+  /* font and typography  */
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Unbounded", sans-serif;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.75rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font_size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /* font weight  */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* z index  */
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
 * {
