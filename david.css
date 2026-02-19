@@ -1,0 +1,49 @@
+.david-section {
+  background-image: url(./assets/design_photos/solo-leveling-sung-jin-woo-shadow-army-wallpaper-2880x1800_8.jpg);
+  height: 80vh;
+  padding: 20px;
+  margin: 0 3rem;
+
+  .titre {
+    margin-bottom: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 50px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 25px;
+  }
+  .btn {
+    border: 10px;
+    width: 100px;
+    height: auto;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: rgb(48, 3, 91);
+    margin: 30px;
+    padding: 15px;
+    padding-bottom: 15px;
+    border-style: inset;
+    border-color: blueviolet;
+    text-decoration: none;
+    color: black;
+  }
+  .btn:hover {
+    transition: 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-top: 100px;
+    background-color: rgb(212, 0, 255);
+  }
+  .rue {
+    border-style: solid;
+    border-color: #56089e;
+    border: 5px;
+  }
+  img {
+    height: 200px;
+    width: 200px;
+    margin-left: 500px;
+  }
+}
