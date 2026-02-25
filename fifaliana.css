@@ -2,7 +2,7 @@
   padding: 145px;
   background: linear-gradient(to left, black, gray);
   width: 100%;
-
+  
   @keyframes move {
     0% {
       transform: translateX(0);
@@ -80,11 +80,4 @@
   img {
     margin-right: 10px;
   }
-}
-@media (max-width:1000px) {
-  body {
-    padding: 145px;
-  background: linear-gradient(to left, black, gray);
-  width: 100%;
-      }
 }
