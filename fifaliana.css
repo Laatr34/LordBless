@@ -1,11 +1,10 @@
 .fifaliana-section {
   body{
     padding: 145px;
-    background: linear-gradient(to left, black, gray);
+    background-color: white;
     width: 100%;
     max-width: 500px;
   }
-
   @keyframes move {
     0% {
       transform: translateX(0);
@@ -17,33 +16,24 @@
       transform: translateX(0);
     }
   }
-
   h1 {
     animation: move 2s infinite;
   }
-
-  body::backdrop {
-    filter: blur(8px);
-  }
-
   div {
     color: aquamarine;
     padding: 30px;
   }
-
   .cercle {
-    width: 350px;
-    height: 360px;
+    width: 230px;
+    height: 230px;
     background-image: url(./assets/grp_photos/fifaliana.jpg);
     border-radius: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    right: 0;
     box-shadow: 5px 10px 10px rgb(37, 36, 36);
   }
-
   .cercle::before {
     background:
       linear-gradient(rgba(0, 0, 0, 0.5)),
@@ -53,7 +43,7 @@
   }
 
   h2 {
-    color: antiquewhite;
+    color: Black;
   }
 
   p {
@@ -89,17 +79,13 @@
       background-color: black;
     }
     h1 {
-      font-size: 22px;
+      font-size: 20px;
     }
     h2 {
-      font-size: 22px;
+      font-size: 20px;
     }
     .cercle {
-      right: 20px;
-    }
-    .i {
-      flex-direction: column;
-      align-items: center;
+      right: 60px;
     }
   }
 }
