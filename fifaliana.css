@@ -2,6 +2,7 @@
   padding: 145px;
   background: linear-gradient(to left, black, gray);
   width: 100%;
+  max-width: 500px;
   
   @keyframes move {
     0% {
@@ -80,4 +81,14 @@
   img {
     margin-right: 10px;
   }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 22px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    .cercle {
+      flex-direction: colum;
+    }
 }
