@@ -7,8 +7,10 @@
 }
 
 body{
-    display: flex;
+    background-color: #c7b7a3;
+    color: black;
 }
+
 
 img{
     width: 170px;
@@ -19,48 +21,67 @@ img{
     border-radius: 1rem;
 }
 
+.resume_box{
+
+    margin: auto;
+    width: 70%;
+    height: 800px;
+    background-color: #e8d8c4;
+    box-shadow: 5px 21px 20px 20px #3d3f4238;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .contact__section{
     margin-left: 2rem;
     font-size: large;
 }
 
 .ss{
-    background: #A8CABA;
+    background:#561C24;
+    color: #fff;
     padding-right: 1rem;
     margin-right: 2rem;
-    height: 100vh;
-    width: 28%;
+    height: 100%;
+    width: 25%;
 }
 
 .contact__section .phone__contact{
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 
 }
 
- .contact__section .mail{
+.contact__section h2{
+    color: #c3b1e6;
+}
+.contact__section .mail{
     font-size: medium;
     
  }
 
 .contact__section .q{
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .contact__section .l{
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .contact__section .loisirs{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .home__section{
-    margin-top: 1rem;
+    /* background-color: aquamarine; */
+    width: 60%;
+    margin-left: 280px;
+    margin-top: -790px;
 }
 
 .home__name{
     font-size: 55px;
+
 }
 
 .home__description{
