@@ -1,4 +1,4 @@
-.fifaliana-section {
+.fifarn-section {
   padding: 145px;
   background: linear-gradient(to left, black, gray);
   width: 100%;
@@ -89,6 +89,6 @@
       font-size: 22px;
     }
     .cercle {
-      flex-direction: colum;
+      flex-direction: column;
     }
 }
