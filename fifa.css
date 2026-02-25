@@ -82,6 +82,9 @@
     margin-right: 10px;
   }
   @media (max-width: 768px) {
+    body {
+      background-color: black;
+    }
     h1 {
       font-size: 22px;
     }
@@ -91,4 +94,5 @@
     .cercle {
       flex-direction: column;
     }
+  }
 }
