@@ -1,9 +1,8 @@
 .fifaliana-section {
   body{
     padding: 145px;
-    background-color: white;
+    background: linear-graduient(to left,black,gray);
     width: 100%;
-    max-width: 500px;
   }
   @keyframes move {
     0% {
@@ -74,7 +73,7 @@
   img {
     margin-right: 10px;
   }
-  @media (max-width: 768px) { 
+  @media (max-width: 1000px) { 
     body { 
       background-color: black;
     }
