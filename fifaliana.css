@@ -1,9 +1,12 @@
 .fifaliana-section {
-  padding: 145px;
-  background: linear-gradient(to left, black, gray);
-  width: 100%;
-  max-width: 500px;
-  
+  body{
+    padding: 145px;
+    background: linear-gradient(to left, black, gray);
+    width: 100%;
+    max-width: 500px;
+    overflow-x: hidden;
+  }
+
   @keyframes move {
     0% {
       transform: translateX(0);
@@ -81,7 +84,10 @@
   img {
     margin-right: 10px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 768px) { 
+    body { 
+      font-size: 16px;
+    }
     h1 {
       font-size: 22px;
     }
