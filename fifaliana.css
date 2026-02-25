@@ -4,7 +4,6 @@
     background: linear-gradient(to left, black, gray);
     width: 100%;
     max-width: 500px;
-    overflow-x: hidden;
   }
 
   @keyframes move {
@@ -41,6 +40,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
+    right: 0;
     box-shadow: 5px 10px 10px rgb(37, 36, 36);
   }
 
@@ -57,7 +57,7 @@
   }
 
   p {
-    color: azure;
+    color: Black;
   }
 
   #cercle1 {
@@ -86,7 +86,7 @@
   }
   @media (max-width: 768px) { 
     body { 
-      font-size: 16px;
+      background-color: black;
     }
     h1 {
       font-size: 22px;
@@ -95,7 +95,11 @@
       font-size: 22px;
     }
     .cercle {
-      margin-left: auto;
+      right: 20px;
+    }
+    .i {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
