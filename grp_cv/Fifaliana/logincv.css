@@ -63,4 +63,14 @@ body {
 section {
     margin-bottom: 20px;
     color: black;
+
+}
+@media (max-width:1000px) {
+    .cv {
+        flex-direction: column;
+    }
+    .gauche,
+    .droit {
+        width: 100%;
+    }
 }
