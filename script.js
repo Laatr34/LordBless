@@ -110,6 +110,79 @@ document.addEventListener("DOMContentLoaded", () => {
       activeCard.classList.add("active");
     });
   });
+
+  const gTimeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".member-container",
+      start: "top 60%",
+    },
+  });
+
+  gTimeline
+    .to(".member-container .card-wrapper", {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+    })
+    .to(".card-wrapp", {
+      // x: 0,
+      // opacity: 1,
+      duration: 0.3,
+      stagger: 0.1,
+    });
+
+  const cards = $(".card-wrapp");
+  const controlBtn = $(".btn-control");
+
+  // Placement initial des z-index
+  cards.each(function (i, c) {
+    $(c).css({ zIndex: cards.length - i });
+  });
+
+  let zIndexPrev = 10;
+
+  $.each(controlBtn, (i, btn) => {
+    $(btn).on("click", function (e) {
+      const action = e.currentTarget.dataset.action;
+
+      // Récupérer l’index de la carte active
+      let index = $.map(cards, function (c, j) {
+        if ($(c).hasClass("active")) {
+          return j;
+        }
+      })[0];
+
+      // 🚫 CONTRAINTES (empêche de dépasser)
+      if (
+        (action === "next" && index >= cards.length - 1) ||
+        (action === "previous" && index <= 0)
+      ) {
+        return; // stop ici
+      }
+
+      if (action === "previous") {
+        zIndexPrev++;
+      }
+
+      const slider = {
+        zIndex: action === "next" ? 10 : zIndexPrev,
+        transform: `translateX(${action === "next" ? -210 : 210}px) scale(0.9)`,
+      };
+
+      const activeCard = cards[index];
+
+      $(activeCard).css(slider).removeClass("active");
+
+      const newIndex = action === "next" ? index + 1 : index - 1;
+      const newCard = cards[newIndex];
+
+      $(newCard)
+        .css({
+          transform: `translateX(0) scale(1)`,
+        })
+        .addClass("active");
+    });
+  });
 });
 
 // EVENEMENT LIEE AU SCROLL
@@ -129,42 +202,4 @@ window.addEventListener("scroll", () => {
   navBar.style.position = position;
   navBar.style.top = top;
   navBar.style.zIndex = 2000;
-});
-
-// CONCEPTION DU SWIPPER
-const swipperBtns = document.querySelectorAll(".slider-btn");
-const cards = document.querySelectorAll(".member-box");
-let index = 0;
-
-swipperBtns.forEach((s) => {
-  s.addEventListener("click", (e) => {
-    const parent = e.target.parentNode;
-    const action = parent.dataset.action;
-
-    switch (action) {
-      case "previous":
-        index--;
-
-        if (index < 0) {
-          index = cards.length - 1;
-        }
-        break;
-
-      case "next":
-        index++;
-
-        if (index > cards.length - 1) {
-          index = 0;
-        }
-        break;
-    }
-
-    for (let i = 0; i < cards.length; i++) {
-      const c = cards[i];
-
-      c.classList.remove("showed");
-    }
-
-    cards[index].classList.add("showed");
-  });
 });
