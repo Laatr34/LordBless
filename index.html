@@ -3,18 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>LordBless</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lahatra.css" />
+    <link rel="stylesheet" href="david.css" />
+    <link rel="stylesheet" href="safidy.css" />
+    <link rel="stylesheet" href="faniry.css" />
+    <link rel="stylesheet" href="fifaliana.css" />
+    <link rel="stylesheet" href="mika.css" />
+    <link rel="stylesheet" href="mitia.css" />
+    <link rel="stylesheet" href="riad.css" />
+    <link rel="stylesheet" href="anjara.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
-  <body>
-    <div style="height: 100vh" class="previous"></div>
 
-    <div class="member-container">
-      <h1>Membres</h1>
+  <body>
+    <section class="hero" id="heroSect">
+      <div class="bcg-img">
+        <img id="polygon" src="./assets/design_photos/polygon.png" alt="" />
+        <img
+          id="rectangle_design"
+          src="./assets/design_photos/rectangle_design.png"
+          alt=""
+        />
+        <img
+          id="rectangle_rounded"
+          src="./assets/design_photos/rectangle_rounded.png"
+          alt=""
+        />
+        <img id="circle" src="./assets/design_photos/circle.png" alt="" />
+      </div>
+      <section class="hero-content">
+        <h1>
+          We <span class="invert">ar</span>e
+          <span class="invert">Lord</span>Bless
+        </h1>
+        <p>Découvrirons les concepts du web</p>
+        <a href="#team" class="hero-btn to-abouts">
+          <span class="btn-text"> T'est partant ?</span>
+        </a>
+      </section>
+    </section>
+
+    <div class="nav-bar">
+      <div class="logo">
+        <a href="#"><span class="invert">Lord</span>Bless</a>
+      </div>
+
+      <ul class="nav-links">
+        <a href="#team" class="link">Equipe</a>
+        <a href="#member" class="link">Membre</a>
+        <a href="#working" class="link">Travaille</a>
+      </ul>
+    </div>
+
+    <seciton id="team" class="team-about-box">
+      <div class="team-summary">
+        <div class="team-propos">
+          <p class="about-team">
+            Premièrement, notre Groupe s'appelle LordBless, ce groupe vise à
+            connaître les bases du webs en insistant sur le HTML, CSS et
+            Javascript.
+          </p>
+        </div>
+      </div>
+
+      <div class="grp-photo-box">
+        <img src="./assets/grp_photos/fifaliana.jpg" alt="" />
+        <img src="./assets/grp_photos/david_photo.jpg" alt="" />
+        <img src="./assets/grp_photos/faniry.jpg" alt="" />
+        <img src="./assets/grp_photos/mika.jpg" alt="" />
+        <img src="./assets/grp_photos/mitia.jpg" alt="" />
+        <img src="./assets/grp_photos/Lahatra_photo.png" alt="" />
+        <img src="./assets/grp_photos/riad.jpg" alt="" />
+        <img src="./assets/grp_photos/jonah.jpg" alt="" />
+        <img src="./assets/grp_photos/anjara.jpg" alt="" />
+      </div>
+
+      <div class="bg-outro">
+        <img
+          id="rectangle_design"
+          src="assets/design_photos/rectangle_design.png"
+          alt=""
+        />
+        <img
+          id="rectangle_rounded"
+          src="assets/design_photos/rectangle_rounded.png"
+          alt=""
+        />
+      </div>
+    </seciton>
+
+    <main class="member-section" id="member">
+      <h1>Decouvrez les membres</h1>
 
       <div class="card-container">
         <div
-          style="position: relative; height: 80vh; width: 100%"
+          style="position: relative; height: 40vh; width: 100%"
           class="card-wrapper"
         >
           <div class="card-wrapp back-light active" id="lahatra">
@@ -27,7 +125,9 @@
               <span class="f-name">Andrianamaro Lahatra</span>
             </p>
 
-            <a href="#" class="btn light btn-cv"><span>Voir cv</span></a>
+            <a href="./grp_cv/Lahatra/index.html" class="btn light btn-cv"
+              ><span>Voir cv</span></a
+            >
           </div>
 
           <div class="card-wrapp back-dark" id="mitia">
@@ -36,11 +136,13 @@
             </div>
 
             <p class="profil-description">
-              <span class="name">RAJAONARISON</span> <br />
-              <span class="f-name">Andrianamaro Lahatra</span>
+              <span class="name">RAZAFIMAHEFA</span> <br />
+              <span class="f-name">Mitia Ny Aina</span>
             </p>
 
-            <a href="#" class="btn btn-cv"><span>Voir cv</span></a>
+            <a href="./grp_cv/Mitia/CV.html" class="btn btn-cv"
+              ><span>Voir cv</span></a
+            >
           </div>
 
           <div class="card-wrapp back-dark" id="jonah">
@@ -49,11 +151,13 @@
             </div>
 
             <p class="profil-description light">
-              <span class="name">RAJAONARISON</span> <br />
-              <span class="f-name">Andrianamaro Lahatra</span>
+              <span class="name">RASAFIDIARILALA</span> <br />
+              <span class="f-name">Jonarson Julien</span>
             </p>
 
-            <a href="#" class="btn light btn-cv"><span>Voir cv</span></a>
+            <a href="./grp_cv/Jonah/cv-jonah.html" class="btn light btn-cv"
+              ><span>Voir cv</span></a
+            >
           </div>
 
           <div class="card-wrapp back-light" id="david">
@@ -62,8 +166,8 @@
             </div>
 
             <p class="profil-description light">
-              <span class="name">RAJAONARISON</span> <br />
-              <span class="f-name">Andrianamaro Lahatra</span>
+              <span class="name">ANDRINIRINA</span> <br />
+              <span class="f-name">David Emmanuel</span>
             </p>
 
             <a href="#" class="btn light btn-cv"><span>Voir cv</span></a>
@@ -75,11 +179,13 @@
             </div>
 
             <p class="profil-description">
-              <span class="name">RAJAONARISON</span> <br />
-              <span class="f-name">Andrianamaro Lahatra</span>
+              <span class="name"></span> <br />
+              <span class="f-name">Anjara</span>
             </p>
 
-            <a href="#" class="btn btn-cv"><span>Voir cv</span></a>
+            <a href="./grp_cv/Anjara/cvanjara.html" class="btn btn-cv"
+              ><span>Voir cv</span></a
+            >
           </div>
 
           <div class="card-wrapp back-light" id="riad">
@@ -88,11 +194,13 @@
             </div>
 
             <p class="profil-description light">
-              <span class="name">RAJAONARISON</span> <br />
-              <span class="f-name">Andrianamaro Lahatra</span>
+              <span class="name">BETSAROANA</span> <br />
+              <span class="f-name">Riad Maranine</span>
             </p>
 
-            <a href="#" class="btn light btn-cv"><span>Voir cv</span></a>
+            <a href="./grp_cv/Riad/riad-cv.html" class="btn light btn-cv"
+              ><span>Voir cv</span></a
+            >
           </div>
 
           <div class="card-wrapp back-light" id="faniry">
@@ -101,11 +209,13 @@
             </div>
 
             <p class="profil-description light">
-              <span class="name">RAJAONARISON</span> <br />
-              <span class="f-name">Andrianamaro Lahatra</span>
+              <span class="name">RAZAFINDREMEHA</span> <br />
+              <span class="f-name">Faniriniaina Roland</span>
             </p>
 
-            <a href="#" class="btn light btn-cv"><span>Voir cv</span></a>
+            <a href="./grp_cv/Faniry/cv Faniry.html" class="btn light btn-cv"
+              ><span>Voir cv</span></a
+            >
           </div>
 
           <div class="card-wrapp back-dark" id="mika">
@@ -114,11 +224,13 @@
             </div>
 
             <p class="profil-description">
-              <span class="name">RAJAONARISON</span> <br />
-              <span class="f-name">Andrianamaro Lahatra</span>
+              <span class="name">RARIVOARISOA NIAINA</span> <br />
+              <span class="f-name">Michael Jedidia</span>
             </p>
 
-            <a href="#" class="btn btn-cv"><span>Voir cv</span></a>
+            <a href="./grp_cv/Mika/CV.html" class="btn btn-cv"
+              ><span>Voir cv</span></a
+            >
           </div>
 
           <div class="card-wrapp back-light" id="fifa">
@@ -127,18 +239,18 @@
             </div>
 
             <p class="profil-description light">
-              <span class="name">RAJAONARISON</span> <br />
-              <span class="f-name">Andrianamaro Lahatra</span>
+              <span class="name">RAJAOMIARISOA</span> <br />
+              <span class="f-name">Nofitiana Fifaliantsoa</span>
             </p>
 
-            <a href="#" class="btn light btn-cv"><span>Voir cv</span></a>
+            <a href="./grp_cv/Fifaliana/cv.html" class="btn light btn-cv"
+              ><span>Voir cv</span></a
+            >
           </div>
         </div>
       </div>
 
       <div class="blob-div">
-        <div class="blob-unit"></div>
-        <div class="blob-unit"></div>
         <div class="blob-unit"></div>
         <div class="blob-unit"></div>
       </div>
@@ -149,8 +261,96 @@
         </button>
         <button class="btn-next btn-control" data-action="next">N</button>
       </div>
-    </div>
+    </main>
 
-    <script type="module" src="script.js"></script>
+    <section id="working" class="working-section">
+      <h1 class="working-title">
+        Ce que nous avons appris en développement web
+      </h1>
+
+      <div class="language-box">
+        <div style="z-index: 1" class="language html">
+          <div class="img-box">
+            <img src="./assets/outro_photo/squelette.png" alt="" />
+          </div>
+
+          <div class="language-info">
+            <h2
+              class="language-name"
+              data-logo="./assets/outro_photo/html-5.webp"
+            >
+              <img src="assets/outro_photo/html-5.webp" alt="" />
+              HTML
+            </h2>
+            <p class="sigle">HyperText Markup Language</p>
+            <p>
+              Comme nous l’avons appris durant notre devoir, le HTML est
+              considéré comme le squelette de notre site web, car il constitue
+              tous les éléments que celui-ci doit contenir.
+            </p>
+          </div>
+        </div>
+
+        <div class="language css">
+          <div class="img-box">
+            <img src="./assets/outro_photo/human.png" alt="" />
+          </div>
+
+          <div class="language-info">
+            <h2
+              class="language-name"
+              data-logo="./assets/outro_photo/css-3.webp"
+            >
+              <img src="assets/outro_photo/css-3.webp" alt="" />
+              CSS
+            </h2>
+            <p class="sigle">Cascading StyleSheets</p>
+            <p>
+              Comme le HTML est le squelette, le CSS est le langage qui forme la
+              chair et les vêtements stylistiques de notre site web.
+            </p>
+          </div>
+        </div>
+
+        <div class="language js">
+          <div class="img-box">
+            <img src="./assets/outro_photo/brain.png" alt="" />
+          </div>
+
+          <div class="language-info">
+            <h2
+              class="language-name"
+              data-logo="./assets/outro_photo/js-es6.webp"
+            >
+              <img src="assets/outro_photo/js-es6.webp" alt="" />
+              JS
+            </h2>
+            <p class="sigle">JavaScript</p>
+            <p>
+              Si le HTML est le squelette et le CSS l’apparence, JavaScript est
+              le cerveau du site web. Il permet d’ajouter de l’interactivité et
+              de rendre la page dynamique.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="control-btn">
+        <span title="HTML" class="line line1 active"></span>
+        <span title="CSS" class="line line2"></span>
+        <span title="JS" class="line line3"></span>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
