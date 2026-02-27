@@ -39,25 +39,6 @@
     .about-content span {
         font-weight: bold;
     }
-    .btn {
-        text-align: center;
-        display: block;
-        background-color: blue;
-        margin: 20px auto;
-        justify-self: center;
-        padding: 15px;
-        border-radius: 15px;
-        grid-area: p;
-        transition: 0.3s ease-in-out;
-    }
-    .btn a {
-        font-size: 2rem;
-        text-decoration: none;
-        color: white;
-    }
-    .btn:hover {
-        transform: scale(1.1);
-    }
     @media  (max-width:1285px) {
     .about {
       grid-template-columns: 1fr;
@@ -72,5 +53,6 @@
     }
 }
     
+
 
     
