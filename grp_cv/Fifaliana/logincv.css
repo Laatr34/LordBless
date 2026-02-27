@@ -1,76 +1,58 @@
-body {
-    background: linear-gradient(145deg,rgb(14, 13, 13),gray,white);
-    margin: 0;
-    padding: 20px;
-}
-
-.cv {
-    display: flex;
-    margin: 30px;
-    background: linear-gradient(30deg,rgb(26, 25, 25),gray,rgb(194, 193, 193));
-    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
-}
-
-/* colonne gauche */
-.left {
-    background: linear-gradient(156deg,rgb(31, 31, 32),rgb(65, 65, 68),rgb(182, 183, 189));
-    color: white;
-    width: 19%;
-    padding: 15px;
-}
-
-.left h2 {
-    border-bottom: 1px solid white;
-    padding-bottom: 5px;
-}
-
-.photo img{
-    width: 200px;
-    border-radius: 30%;
-    display: block;
-    margin: auto;
-}
-
-/* barres de langues */
-.bar {
-    background: aliceblue;
-    height: 6px;
-    margin-bottom: 10px;
-}
-
-.level {
-    height: 6px;
-    background: #00c6ff;
-}
-
-.mlg {
-    width: 90%;
-}
-.fr {
-    width: 70%;
-}
-
-/* colonne droite */
-.right {
-    width: 65%;
-    padding: 30px;
-}
-
-.right h1 {
-    margin-top: 0;
-}
-
-section {
-    margin-bottom: 20px;
-    color: black;
-
-}
-@media (max-width:1000px) {
-    .cv {
-        flex-direction: column;
+    *{
+        margin: 0;
+        padding: 0;
     }
-    .gauche,
-    .droit {
-        width: 100%;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+    }
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        margin: 40px;
+        border-radius: 15px;
+        border: 3px solid black;
+        background-color: #cacbcd;
+
+    }
+    .grid-img img{
+        max-width: 100%;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+       border-radius: 50%;
+    }
+    .about-content p {
+        
+        margin: 15px;
+        font-size: 2.5rem;
+        background-color: white;
+        padding: 15px;
+        border-radius: 15px;
+        border: 3px solid black;
+    }
+    .about-content span {
+        font-weight: bold;
+    }
+    @media  (max-width:1285px) {
+    .about {
+      grid-template-columns: 1fr;
+    }
+    .grid-img {
+      margin-top: 20px;
+      max-width: 90%;
+    }
+     .grid-text {
+      width: 100%;
+      padding: 15px;
     }
 }
+    
+
+
+    
